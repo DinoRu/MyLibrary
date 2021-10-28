@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.dinodev.mylibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyLibrary">
+        <activity
+            android:name=".WebSiteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CurrentlyReadingActivity"
+            android:label="@string/currently_reading_books"
+            android:exported="true" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:label="@string/favorite_books"
+            android:exported="true" />
+        <activity
+            android:name=".WantToReadActivity"
+            android:label="@string/want_to_read_books"
+            android:exported="true" />
+        <activity
+            android:name=".AlreadyReadBookActivity"
+            android:label="@string/already_read_books"
+            android:exported="true" />
+        <activity
+            android:name=".EssaiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookActivity"
+            android:label="@string/books_detail"
+            android:exported="true" />
+        <activity
+            android:name=".AllBooksActivity"
+            android:label="@string/all_books"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

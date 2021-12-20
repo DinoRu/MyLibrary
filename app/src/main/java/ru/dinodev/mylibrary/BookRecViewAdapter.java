@@ -63,12 +63,12 @@ public class BookRecViewAdapter extends RecyclerView.Adapter<BookRecViewAdapter.
             }
         });
 
-        if(books.get(position).isExpanded()){
+        if (books.get(position).isExpanded()){
             TransitionManager.beginDelayedTransition(holder.parent);
             holder.expandedRelLayout.setVisibility(View.VISIBLE);
             holder.downArrow.setVisibility(View.GONE);
 
-            if(parentActivity.equals("allBooks")){
+            if (parentActivity.equals("allBooks")){
                 holder.btnDelete.setVisibility(View.GONE);
             }else if (parentActivity.equals("alreadyRead")) {
                 holder.btnDelete.setVisibility(View.VISIBLE);
